@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B216C8B2BEDF5F600E4BF03 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B216C8A2BEDF5F600E4BF03 /* DetailViewModel.swift */; };
-		2B22A6A82BD530D000B59718 /* FirebaseFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22A6A72BD530D000B59718 /* FirebaseFunc.swift */; };
-		2B22A6AA2BD5381200B59718 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B22A6A92BD5381200B59718 /* GoogleService-Info.plist */; };
 		2B23DDAF2C18A5ED003B4BD7 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 2B23DDAE2C18A5ED003B4BD7 /* DGCharts */; };
 		2B26993F2BE7C8E600D11508 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2B26993E2BE7C8E600D11508 /* FirebaseAuth */; };
 		2B2699412BE7C8E600D11508 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2B2699402BE7C8E600D11508 /* FirebaseAuthCombine-Community */; };
@@ -22,85 +19,88 @@
 		2B2699532BE7C8E600D11508 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2B2699522BE7C8E600D11508 /* FirebaseFunctionsCombine-Community */; };
 		2B2699652BE7C8E600D11508 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2B2699642BE7C8E600D11508 /* FirebaseStorage */; };
 		2B2699672BE7C8E600D11508 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2B2699662BE7C8E600D11508 /* FirebaseStorageCombine-Community */; };
-		2B33CE9B2BF4AD1F0064CE78 /* AlertFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B33CE9A2BF4AD1F0064CE78 /* AlertFont.swift */; };
-		2B3A8E182C1176B3008F19B9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3A8E172C1176B3008F19B9 /* TestViewController.swift */; };
-		2B401E9F2BE61D5200D6CC01 /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B401E9E2BE61D5200D6CC01 /* AccountInfo.swift */; };
-		2B5E600C2BFDEB5F008A412F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5E600B2BFDEB5F008A412F /* Review.swift */; };
-		2B5FCF432C100ED9007C6F8C /* CastGenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5FCF422C100ED9007C6F8C /* CastGenresViewController.swift */; };
-		2B6229A42C12D28B00679446 /* RateChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6229A32C12D28B00679446 /* RateChartViewController.swift */; };
-		2B8402232BDB46E800E2E55E /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8402222BDB46E800E2E55E /* AccountInfoViewController.swift */; };
-		2B9875302BE4CD2000EF9128 /* AccountInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B98752F2BE4CD2000EF9128 /* AccountInfoViewModel.swift */; };
-		2BA205432BCAA44C004DE6F3 /* FilmViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA205372BCAA44C004DE6F3 /* FilmViewModels.swift */; };
-		2BA205442BCAA44C004DE6F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA205392BCAA44C004DE6F3 /* Assets.xcassets */; };
-		2BA205452BCAA44C004DE6F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2053A2BCAA44C004DE6F3 /* AppDelegate.swift */; };
-		2BA205462BCAA44C004DE6F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2053B2BCAA44C004DE6F3 /* SceneDelegate.swift */; };
+		2B5AC8F52C18B6380053C2FB /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC8F22C18B6380053C2FB /* SessionManager.swift */; };
+		2B5AC93E2C18BBC40053C2FB /* AlertFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC93D2C18BBC40053C2FB /* AlertFont.swift */; };
+		2B5AC9422C18BBDA0053C2FB /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC93F2C18BBDA0053C2FB /* AccountInfo.swift */; };
+		2B5AC9432C18BBDA0053C2FB /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9402C18BBDA0053C2FB /* Film.swift */; };
+		2B5AC9442C18BBDA0053C2FB /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9412C18BBDA0053C2FB /* Review.swift */; };
+		2B5AC9462C18BBF50053C2FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9452C18BBF50053C2FB /* SceneDelegate.swift */; };
+		2B5AC9482C18BC030053C2FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9472C18BC030053C2FB /* AppDelegate.swift */; };
+		2B5AC94A2C18BC260053C2FB /* FirebaseFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9492C18BC260053C2FB /* FirebaseFunc.swift */; };
+		2B5AC94E2C18BC950053C2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5AC94D2C18BC950053C2FB /* Assets.xcassets */; };
+		2B5AC9532C18BD3D0053C2FB /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC94F2C18BD3C0053C2FB /* FavouriteViewModel.swift */; };
+		2B5AC9542C18BD3D0053C2FB /* RateViewViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9502C18BD3C0053C2FB /* RateViewViewModels.swift */; };
+		2B5AC9552C18BD3D0053C2FB /* FilmViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9512C18BD3C0053C2FB /* FilmViewModels.swift */; };
+		2B5AC9562C18BD3D0053C2FB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9522C18BD3C0053C2FB /* DetailViewModel.swift */; };
+		2B5AC95A2C18BE4B0053C2FB /* RegisterAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9572C18BE4B0053C2FB /* RegisterAccountViewModel.swift */; };
+		2B5AC95B2C18BE4B0053C2FB /* AccountInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9582C18BE4B0053C2FB /* AccountInfoViewModel.swift */; };
+		2B5AC95C2C18BE4B0053C2FB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9592C18BE4B0053C2FB /* LoginViewModel.swift */; };
+		2B5AC95E2C18BE670053C2FB /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC95D2C18BE670053C2FB /* WelcomeScreenViewController.swift */; };
+		2B5AC9602C18BED50053C2FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC95F2C18BED50053C2FB /* LoginViewController.swift */; };
+		2B5AC9622C18BEFD0053C2FB /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9612C18BEFD0053C2FB /* RegisterAccountViewController.swift */; };
+		2B5AC9642C18BF0D0053C2FB /* AccountCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9632C18BF0D0053C2FB /* AccountCreatedViewController.swift */; };
+		2B5AC9662C18BF1D0053C2FB /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9652C18BF1D0053C2FB /* AccountInfoViewController.swift */; };
+		2B5AC9682C18BF3C0053C2FB /* AddUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9672C18BF3C0053C2FB /* AddUserInfoViewController.swift */; };
+		2B5AC96E2C18C02F0053C2FB /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9692C18C02F0053C2FB /* ReviewCell.swift */; };
+		2B5AC96F2C18C02F0053C2FB /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC96A2C18C02F0053C2FB /* FilmCell.swift */; };
+		2B5AC9702C18C02F0053C2FB /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC96B2C18C02F0053C2FB /* TabbarViewController.swift */; };
+		2B5AC9712C18C02F0053C2FB /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC96C2C18C02F0053C2FB /* UserInfo.swift */; };
+		2B5AC9722C18C02F0053C2FB /* FilmFavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC96D2C18C02F0053C2FB /* FilmFavCell.swift */; };
+		2B5AC9762C18C1E20053C2FB /* ListMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9752C18C1E20053C2FB /* ListMovieViewController.swift */; };
+		2B5AC9782C18C1EC0053C2FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9772C18C1EC0053C2FB /* DetailViewController.swift */; };
+		2B5AC97A2C18C1F10053C2FB /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9792C18C1F10053C2FB /* RateViewController.swift */; };
+		2B5AC97C2C18C1FA0053C2FB /* ListCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC97B2C18C1FA0053C2FB /* ListCommentViewController.swift */; };
+		2B5AC97E2C18C1FF0053C2FB /* RateChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC97D2C18C1FF0053C2FB /* RateChartViewController.swift */; };
+		2B5AC9802C18C2030053C2FB /* CastGenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC97F2C18C2030053C2FB /* CastGenresViewController.swift */; };
+		2B5AC9822C18C2160053C2FB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9812C18C2160053C2FB /* SearchViewController.swift */; };
+		2B5AC9842C18C21F0053C2FB /* FavouriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9832C18C21F0053C2FB /* FavouriteListViewController.swift */; };
+		2B5AC9862C18C2240053C2FB /* TestViewController.swift 23-40-51-307.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9852C18C2240053C2FB /* TestViewController.swift 23-40-51-307.swift */; };
+		2B5AC9882C18C24F0053C2FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B5AC9872C18C24F0053C2FB /* GoogleService-Info.plist */; };
 		2BA205472BCAA44C004DE6F3 /* ImageURl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2053F2BCAA44C004DE6F3 /* ImageURl.swift */; };
-		2BA205482BCAA44C004DE6F3 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA205412BCAA44C004DE6F3 /* Film.swift */; };
-		2BA2054D2BCAA4FD004DE6F3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2054A2BCAA4FD004DE6F3 /* DetailViewController.swift */; };
-		2BA2054E2BCAA4FD004DE6F3 /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2054B2BCAA4FD004DE6F3 /* FilmCell.swift */; };
-		2BA2054F2BCAA4FD004DE6F3 /* ListMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2054C2BCAA4FD004DE6F3 /* ListMovieViewController.swift */; };
-		2BA205532BCAA51B004DE6F3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA205502BCAA51B004DE6F3 /* SearchViewController.swift */; };
-		2BA205542BCAA51B004DE6F3 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA205512BCAA51B004DE6F3 /* TabbarViewController.swift */; };
-		2BA205552BCAA51B004DE6F3 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA205522BCAA51B004DE6F3 /* WelcomeScreenViewController.swift */; };
-		2BADF7B22BDCFB8200CE90F9 /* AddUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BADF7B12BDCFB8200CE90F9 /* AddUserInfoViewController.swift */; };
-		2BB1181F2BFCAEAC00D668AE /* RateViewViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1181E2BFCAEAC00D668AE /* RateViewViewModels.swift */; };
-		2BB859762C01F09E0059ADF6 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB859752C01F09E0059ADF6 /* ReviewCell.swift */; };
-		2BBE218F2BD7D97700335C0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE218E2BD7D97700335C0B /* LoginViewController.swift */; };
-		2BC0D8752BD8F2B500C62AD6 /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0D8742BD8F2B500C62AD6 /* RegisterAccountViewController.swift */; };
-		2BC0D8772BD9023700C62AD6 /* RegisterAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0D8762BD9023700C62AD6 /* RegisterAccountViewModel.swift */; };
-		2BC0D8792BD9474E00C62AD6 /* AccountCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0D8782BD9474E00C62AD6 /* AccountCreatedViewController.swift */; };
-		2BC1DD292C00DB2800E5A254 /* ListCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1DD282C00DB2800E5A254 /* ListCommentViewController.swift */; };
-		2BD0230C2BF20098001778D5 /* FilmFavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0230B2BF20098001778D5 /* FilmFavCell.swift */; };
-		2BD023132BF22459001778D5 /* FavouriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD023122BF22459001778D5 /* FavouriteListViewController.swift */; };
-		2BD023172BF22C01001778D5 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD023162BF22C01001778D5 /* FavouriteViewModel.swift */; };
-		2BDD75472BDA539600DFA058 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD75462BDA539600DFA058 /* LoginViewModel.swift */; };
-		2BDD75492BDA5D9900DFA058 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD75482BDA5D9900DFA058 /* SessionManager.swift */; };
-		2BECD45D2C186DE3006C8C14 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECD45C2C186DE3006C8C14 /* UserInfo.swift */; };
-		2BEDB0A82BFB271900F1CFFA /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDB0A72BFB271900F1CFFA /* RateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B216C8A2BEDF5F600E4BF03 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		2B22A6A72BD530D000B59718 /* FirebaseFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFunc.swift; sourceTree = "<group>"; };
-		2B22A6A92BD5381200B59718 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2B23DDA92C18A562003B4BD7 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
-		2B33CE9A2BF4AD1F0064CE78 /* AlertFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFont.swift; sourceTree = "<group>"; };
-		2B3A8E172C1176B3008F19B9 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		2B401E9E2BE61D5200D6CC01 /* AccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
-		2B5E600B2BFDEB5F008A412F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
-		2B5FCF422C100ED9007C6F8C /* CastGenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastGenresViewController.swift; sourceTree = "<group>"; };
-		2B6229A32C12D28B00679446 /* RateChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateChartViewController.swift; sourceTree = "<group>"; };
-		2B8402222BDB46E800E2E55E /* AccountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
-		2B98752F2BE4CD2000EF9128 /* AccountInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewModel.swift; sourceTree = "<group>"; };
+		2B5AC8F22C18B6380053C2FB /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		2B5AC93D2C18BBC40053C2FB /* AlertFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFont.swift; sourceTree = "<group>"; };
+		2B5AC93F2C18BBDA0053C2FB /* AccountInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
+		2B5AC9402C18BBDA0053C2FB /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		2B5AC9412C18BBDA0053C2FB /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		2B5AC9452C18BBF50053C2FB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2B5AC9472C18BC030053C2FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B5AC9492C18BC260053C2FB /* FirebaseFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseFunc.swift; sourceTree = "<group>"; };
+		2B5AC94D2C18BC950053C2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B5AC94F2C18BD3C0053C2FB /* FavouriteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		2B5AC9502C18BD3C0053C2FB /* RateViewViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateViewViewModels.swift; sourceTree = "<group>"; };
+		2B5AC9512C18BD3C0053C2FB /* FilmViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmViewModels.swift; sourceTree = "<group>"; };
+		2B5AC9522C18BD3C0053C2FB /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		2B5AC9572C18BE4B0053C2FB /* RegisterAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewModel.swift; sourceTree = "<group>"; };
+		2B5AC9582C18BE4B0053C2FB /* AccountInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfoViewModel.swift; sourceTree = "<group>"; };
+		2B5AC9592C18BE4B0053C2FB /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2B5AC95D2C18BE670053C2FB /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		2B5AC95F2C18BED50053C2FB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2B5AC9612C18BEFD0053C2FB /* RegisterAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewController.swift; sourceTree = "<group>"; };
+		2B5AC9632C18BF0D0053C2FB /* AccountCreatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCreatedViewController.swift; sourceTree = "<group>"; };
+		2B5AC9652C18BF1D0053C2FB /* AccountInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
+		2B5AC9672C18BF3C0053C2FB /* AddUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserInfoViewController.swift; sourceTree = "<group>"; };
+		2B5AC9692C18C02F0053C2FB /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		2B5AC96A2C18C02F0053C2FB /* FilmCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
+		2B5AC96B2C18C02F0053C2FB /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		2B5AC96C2C18C02F0053C2FB /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		2B5AC96D2C18C02F0053C2FB /* FilmFavCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmFavCell.swift; sourceTree = "<group>"; };
+		2B5AC9752C18C1E20053C2FB /* ListMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMovieViewController.swift; sourceTree = "<group>"; };
+		2B5AC9772C18C1EC0053C2FB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2B5AC9792C18C1F10053C2FB /* RateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		2B5AC97B2C18C1FA0053C2FB /* ListCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCommentViewController.swift; sourceTree = "<group>"; };
+		2B5AC97D2C18C1FF0053C2FB /* RateChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateChartViewController.swift; sourceTree = "<group>"; };
+		2B5AC97F2C18C2030053C2FB /* CastGenresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastGenresViewController.swift; sourceTree = "<group>"; };
+		2B5AC9812C18C2160053C2FB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2B5AC9832C18C21F0053C2FB /* FavouriteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteListViewController.swift; sourceTree = "<group>"; };
+		2B5AC9852C18C2240053C2FB /* TestViewController.swift 23-40-51-307.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TestViewController.swift 23-40-51-307.swift"; sourceTree = "<group>"; };
+		2B5AC9872C18C24F0053C2FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BA205042BCAA25D004DE6F3 /* FilmValley2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmValley2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA205152BCAA25E004DE6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BA205372BCAA44C004DE6F3 /* FilmViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmViewModels.swift; sourceTree = "<group>"; };
-		2BA205392BCAA44C004DE6F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2BA2053A2BCAA44C004DE6F3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BA2053B2BCAA44C004DE6F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2BA2053F2BCAA44C004DE6F3 /* ImageURl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageURl.swift; sourceTree = "<group>"; };
-		2BA205412BCAA44C004DE6F3 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
-		2BA2054A2BCAA4FD004DE6F3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		2BA2054B2BCAA4FD004DE6F3 /* FilmCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
-		2BA2054C2BCAA4FD004DE6F3 /* ListMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMovieViewController.swift; sourceTree = "<group>"; };
-		2BA205502BCAA51B004DE6F3 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		2BA205512BCAA51B004DE6F3 /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
-		2BA205522BCAA51B004DE6F3 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
-		2BADF7B12BDCFB8200CE90F9 /* AddUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserInfoViewController.swift; sourceTree = "<group>"; };
-		2BB1181E2BFCAEAC00D668AE /* RateViewViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewViewModels.swift; sourceTree = "<group>"; };
-		2BB859752C01F09E0059ADF6 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
-		2BBE218E2BD7D97700335C0B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2BC0D8742BD8F2B500C62AD6 /* RegisterAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewController.swift; sourceTree = "<group>"; };
-		2BC0D8762BD9023700C62AD6 /* RegisterAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewModel.swift; sourceTree = "<group>"; };
-		2BC0D8782BD9474E00C62AD6 /* AccountCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreatedViewController.swift; sourceTree = "<group>"; };
-		2BC1DD282C00DB2800E5A254 /* ListCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCommentViewController.swift; sourceTree = "<group>"; };
-		2BD0230B2BF20098001778D5 /* FilmFavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFavCell.swift; sourceTree = "<group>"; };
-		2BD023122BF22459001778D5 /* FavouriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListViewController.swift; sourceTree = "<group>"; };
-		2BD023162BF22C01001778D5 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
-		2BDD75462BDA539600DFA058 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		2BDD75482BDA5D9900DFA058 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		2BECD45C2C186DE3006C8C14 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		2BEDB0A72BFB271900F1CFFA /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 		2B8402212BDB45AA00E2E55E /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				2BA205522BCAA51B004DE6F3 /* WelcomeScreenViewController.swift */,
+				2B5AC95D2C18BE670053C2FB /* WelcomeScreenViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 				2BA205362BCAA44C004DE6F3 /* ViewModels */,
 				2BA2053C2BCAA44C004DE6F3 /* Views */,
 				2BA205152BCAA25E004DE6F3 /* Info.plist */,
-				2B22A6A92BD5381200B59718 /* GoogleService-Info.plist */,
+				2B5AC9872C18C24F0053C2FB /* GoogleService-Info.plist */,
 			);
 			path = FilmValley2;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 		2BA205382BCAA44C004DE6F3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				2BA205392BCAA44C004DE6F3 /* Assets.xcassets */,
-				2BA2053A2BCAA44C004DE6F3 /* AppDelegate.swift */,
-				2BA2053B2BCAA44C004DE6F3 /* SceneDelegate.swift */,
+				2B5AC9472C18BC030053C2FB /* AppDelegate.swift */,
+				2B5AC9452C18BBF50053C2FB /* SceneDelegate.swift */,
+				2B5AC94D2C18BC950053C2FB /* Assets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 				2BBABBE72C0C498100CA6E0E /* Film */,
 				2BD0230F2BF22404001778D5 /* Search */,
 				2BD023112BF22435001778D5 /* FavouriteList */,
-				2B3A8E172C1176B3008F19B9 /* TestViewController.swift */,
+				2B5AC9852C18C2240053C2FB /* TestViewController.swift 23-40-51-307.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -209,10 +209,10 @@
 		2BA2053E2BCAA44C004DE6F3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2B5AC9492C18BC260053C2FB /* FirebaseFunc.swift */,
 				2BA2053F2BCAA44C004DE6F3 /* ImageURl.swift */,
-				2B22A6A72BD530D000B59718 /* FirebaseFunc.swift */,
-				2BDD75482BDA5D9900DFA058 /* SessionManager.swift */,
-				2B33CE9A2BF4AD1F0064CE78 /* AlertFont.swift */,
+				2B5AC8F22C18B6380053C2FB /* SessionManager.swift */,
+				2B5AC93D2C18BBC40053C2FB /* AlertFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -220,9 +220,9 @@
 		2BA205402BCAA44C004DE6F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2BA205412BCAA44C004DE6F3 /* Film.swift */,
-				2B401E9E2BE61D5200D6CC01 /* AccountInfo.swift */,
-				2B5E600B2BFDEB5F008A412F /* Review.swift */,
+				2B5AC93F2C18BBDA0053C2FB /* AccountInfo.swift */,
+				2B5AC9402C18BBDA0053C2FB /* Film.swift */,
+				2B5AC9412C18BBDA0053C2FB /* Review.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,9 +230,9 @@
 		2BBABBE52C0C492600CA6E0E /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				2BC0D8762BD9023700C62AD6 /* RegisterAccountViewModel.swift */,
-				2BDD75462BDA539600DFA058 /* LoginViewModel.swift */,
-				2B98752F2BE4CD2000EF9128 /* AccountInfoViewModel.swift */,
+				2B5AC9582C18BE4B0053C2FB /* AccountInfoViewModel.swift */,
+				2B5AC9592C18BE4B0053C2FB /* LoginViewModel.swift */,
+				2B5AC9572C18BE4B0053C2FB /* RegisterAccountViewModel.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -240,10 +240,10 @@
 		2BBABBE62C0C494200CA6E0E /* Film */ = {
 			isa = PBXGroup;
 			children = (
-				2BA205372BCAA44C004DE6F3 /* FilmViewModels.swift */,
-				2B216C8A2BEDF5F600E4BF03 /* DetailViewModel.swift */,
-				2BD023162BF22C01001778D5 /* FavouriteViewModel.swift */,
-				2BB1181E2BFCAEAC00D668AE /* RateViewViewModels.swift */,
+				2B5AC9522C18BD3C0053C2FB /* DetailViewModel.swift */,
+				2B5AC94F2C18BD3C0053C2FB /* FavouriteViewModel.swift */,
+				2B5AC9512C18BD3C0053C2FB /* FilmViewModels.swift */,
+				2B5AC9502C18BD3C0053C2FB /* RateViewViewModels.swift */,
 			);
 			path = Film;
 			sourceTree = "<group>";
@@ -251,7 +251,7 @@
 		2BBABBE72C0C498100CA6E0E /* Film */ = {
 			isa = PBXGroup;
 			children = (
-				2BA2054C2BCAA4FD004DE6F3 /* ListMovieViewController.swift */,
+				2B5AC9752C18C1E20053C2FB /* ListMovieViewController.swift */,
 				2BFD6C642C101E7C00CDC479 /* DetailFilm */,
 			);
 			path = Film;
@@ -260,11 +260,11 @@
 		2BBABBE82C0C49AB00CA6E0E /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				2BA205512BCAA51B004DE6F3 /* TabbarViewController.swift */,
-				2BA2054B2BCAA4FD004DE6F3 /* FilmCell.swift */,
-				2BB859752C01F09E0059ADF6 /* ReviewCell.swift */,
-				2BD0230B2BF20098001778D5 /* FilmFavCell.swift */,
-				2BECD45C2C186DE3006C8C14 /* UserInfo.swift */,
+				2B5AC96A2C18C02F0053C2FB /* FilmCell.swift */,
+				2B5AC96D2C18C02F0053C2FB /* FilmFavCell.swift */,
+				2B5AC9692C18C02F0053C2FB /* ReviewCell.swift */,
+				2B5AC96B2C18C02F0053C2FB /* TabbarViewController.swift */,
+				2B5AC96C2C18C02F0053C2FB /* UserInfo.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -272,11 +272,11 @@
 		2BBE218D2BD7D96000335C0B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				2BBE218E2BD7D97700335C0B /* LoginViewController.swift */,
-				2BC0D8742BD8F2B500C62AD6 /* RegisterAccountViewController.swift */,
-				2BC0D8782BD9474E00C62AD6 /* AccountCreatedViewController.swift */,
-				2BADF7B12BDCFB8200CE90F9 /* AddUserInfoViewController.swift */,
-				2B8402222BDB46E800E2E55E /* AccountInfoViewController.swift */,
+				2B5AC9612C18BEFD0053C2FB /* RegisterAccountViewController.swift */,
+				2B5AC95F2C18BED50053C2FB /* LoginViewController.swift */,
+				2B5AC9632C18BF0D0053C2FB /* AccountCreatedViewController.swift */,
+				2B5AC9652C18BF1D0053C2FB /* AccountInfoViewController.swift */,
+				2B5AC9672C18BF3C0053C2FB /* AddUserInfoViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -284,7 +284,7 @@
 		2BD0230F2BF22404001778D5 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				2BA205502BCAA51B004DE6F3 /* SearchViewController.swift */,
+				2B5AC9812C18C2160053C2FB /* SearchViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 		2BD023112BF22435001778D5 /* FavouriteList */ = {
 			isa = PBXGroup;
 			children = (
-				2BD023122BF22459001778D5 /* FavouriteListViewController.swift */,
+				2B5AC9832C18C21F0053C2FB /* FavouriteListViewController.swift */,
 			);
 			path = FavouriteList;
 			sourceTree = "<group>";
@@ -308,11 +308,11 @@
 		2BFD6C642C101E7C00CDC479 /* DetailFilm */ = {
 			isa = PBXGroup;
 			children = (
-				2BA2054A2BCAA4FD004DE6F3 /* DetailViewController.swift */,
-				2BEDB0A72BFB271900F1CFFA /* RateViewController.swift */,
-				2BC1DD282C00DB2800E5A254 /* ListCommentViewController.swift */,
-				2B5FCF422C100ED9007C6F8C /* CastGenresViewController.swift */,
-				2B6229A32C12D28B00679446 /* RateChartViewController.swift */,
+				2B5AC9772C18C1EC0053C2FB /* DetailViewController.swift */,
+				2B5AC9792C18C1F10053C2FB /* RateViewController.swift */,
+				2B5AC97B2C18C1FA0053C2FB /* ListCommentViewController.swift */,
+				2B5AC97F2C18C2030053C2FB /* CastGenresViewController.swift */,
+				2B5AC97D2C18C1FF0053C2FB /* RateChartViewController.swift */,
 			);
 			path = DetailFilm;
 			sourceTree = "<group>";
@@ -393,8 +393,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA205442BCAA44C004DE6F3 /* Assets.xcassets in Resources */,
-				2B22A6AA2BD5381200B59718 /* GoogleService-Info.plist in Resources */,
+				2B5AC94E2C18BC950053C2FB /* Assets.xcassets in Resources */,
+				2B5AC9882C18C24F0053C2FB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,42 +405,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA2054E2BCAA4FD004DE6F3 /* FilmCell.swift in Sources */,
-				2BA205482BCAA44C004DE6F3 /* Film.swift in Sources */,
-				2B3A8E182C1176B3008F19B9 /* TestViewController.swift in Sources */,
-				2BD023132BF22459001778D5 /* FavouriteListViewController.swift in Sources */,
-				2BDD75492BDA5D9900DFA058 /* SessionManager.swift in Sources */,
-				2BA205452BCAA44C004DE6F3 /* AppDelegate.swift in Sources */,
-				2B6229A42C12D28B00679446 /* RateChartViewController.swift in Sources */,
-				2B9875302BE4CD2000EF9128 /* AccountInfoViewModel.swift in Sources */,
-				2BA205532BCAA51B004DE6F3 /* SearchViewController.swift in Sources */,
-				2B216C8B2BEDF5F600E4BF03 /* DetailViewModel.swift in Sources */,
-				2BC1DD292C00DB2800E5A254 /* ListCommentViewController.swift in Sources */,
-				2BA205552BCAA51B004DE6F3 /* WelcomeScreenViewController.swift in Sources */,
-				2BD0230C2BF20098001778D5 /* FilmFavCell.swift in Sources */,
-				2B401E9F2BE61D5200D6CC01 /* AccountInfo.swift in Sources */,
-				2BC0D8792BD9474E00C62AD6 /* AccountCreatedViewController.swift in Sources */,
-				2B5FCF432C100ED9007C6F8C /* CastGenresViewController.swift in Sources */,
-				2BECD45D2C186DE3006C8C14 /* UserInfo.swift in Sources */,
-				2BC0D8752BD8F2B500C62AD6 /* RegisterAccountViewController.swift in Sources */,
-				2BA2054F2BCAA4FD004DE6F3 /* ListMovieViewController.swift in Sources */,
-				2BA205432BCAA44C004DE6F3 /* FilmViewModels.swift in Sources */,
-				2BA2054D2BCAA4FD004DE6F3 /* DetailViewController.swift in Sources */,
-				2BB1181F2BFCAEAC00D668AE /* RateViewViewModels.swift in Sources */,
-				2BB859762C01F09E0059ADF6 /* ReviewCell.swift in Sources */,
-				2B33CE9B2BF4AD1F0064CE78 /* AlertFont.swift in Sources */,
-				2BDD75472BDA539600DFA058 /* LoginViewModel.swift in Sources */,
-				2BC0D8772BD9023700C62AD6 /* RegisterAccountViewModel.swift in Sources */,
-				2BA205462BCAA44C004DE6F3 /* SceneDelegate.swift in Sources */,
-				2BA205542BCAA51B004DE6F3 /* TabbarViewController.swift in Sources */,
+				2B5AC93E2C18BBC40053C2FB /* AlertFont.swift in Sources */,
+				2B5AC9542C18BD3D0053C2FB /* RateViewViewModels.swift in Sources */,
+				2B5AC95C2C18BE4B0053C2FB /* LoginViewModel.swift in Sources */,
+				2B5AC9442C18BBDA0053C2FB /* Review.swift in Sources */,
+				2B5AC9422C18BBDA0053C2FB /* AccountInfo.swift in Sources */,
+				2B5AC9682C18BF3C0053C2FB /* AddUserInfoViewController.swift in Sources */,
+				2B5AC9642C18BF0D0053C2FB /* AccountCreatedViewController.swift in Sources */,
+				2B5AC9482C18BC030053C2FB /* AppDelegate.swift in Sources */,
+				2B5AC97C2C18C1FA0053C2FB /* ListCommentViewController.swift in Sources */,
+				2B5AC9802C18C2030053C2FB /* CastGenresViewController.swift in Sources */,
+				2B5AC95E2C18BE670053C2FB /* WelcomeScreenViewController.swift in Sources */,
+				2B5AC95A2C18BE4B0053C2FB /* RegisterAccountViewModel.swift in Sources */,
+				2B5AC9662C18BF1D0053C2FB /* AccountInfoViewController.swift in Sources */,
+				2B5AC9432C18BBDA0053C2FB /* Film.swift in Sources */,
+				2B5AC9622C18BEFD0053C2FB /* RegisterAccountViewController.swift in Sources */,
+				2B5AC95B2C18BE4B0053C2FB /* AccountInfoViewModel.swift in Sources */,
+				2B5AC9782C18C1EC0053C2FB /* DetailViewController.swift in Sources */,
+				2B5AC97E2C18C1FF0053C2FB /* RateChartViewController.swift in Sources */,
+				2B5AC9562C18BD3D0053C2FB /* DetailViewModel.swift in Sources */,
+				2B5AC9602C18BED50053C2FB /* LoginViewController.swift in Sources */,
+				2B5AC96F2C18C02F0053C2FB /* FilmCell.swift in Sources */,
+				2B5AC9462C18BBF50053C2FB /* SceneDelegate.swift in Sources */,
+				2B5AC9702C18C02F0053C2FB /* TabbarViewController.swift in Sources */,
+				2B5AC9822C18C2160053C2FB /* SearchViewController.swift in Sources */,
+				2B5AC9532C18BD3D0053C2FB /* FavouriteViewModel.swift in Sources */,
+				2B5AC94A2C18BC260053C2FB /* FirebaseFunc.swift in Sources */,
+				2B5AC8F52C18B6380053C2FB /* SessionManager.swift in Sources */,
 				2BA205472BCAA44C004DE6F3 /* ImageURl.swift in Sources */,
-				2B8402232BDB46E800E2E55E /* AccountInfoViewController.swift in Sources */,
-				2B5E600C2BFDEB5F008A412F /* Review.swift in Sources */,
-				2BD023172BF22C01001778D5 /* FavouriteViewModel.swift in Sources */,
-				2BADF7B22BDCFB8200CE90F9 /* AddUserInfoViewController.swift in Sources */,
-				2BEDB0A82BFB271900F1CFFA /* RateViewController.swift in Sources */,
-				2BBE218F2BD7D97700335C0B /* LoginViewController.swift in Sources */,
-				2B22A6A82BD530D000B59718 /* FirebaseFunc.swift in Sources */,
+				2B5AC9762C18C1E20053C2FB /* ListMovieViewController.swift in Sources */,
+				2B5AC96E2C18C02F0053C2FB /* ReviewCell.swift in Sources */,
+				2B5AC97A2C18C1F10053C2FB /* RateViewController.swift in Sources */,
+				2B5AC9842C18C21F0053C2FB /* FavouriteListViewController.swift in Sources */,
+				2B5AC9722C18C02F0053C2FB /* FilmFavCell.swift in Sources */,
+				2B5AC9862C18C2240053C2FB /* TestViewController.swift 23-40-51-307.swift in Sources */,
+				2B5AC9712C18C02F0053C2FB /* UserInfo.swift in Sources */,
+				2B5AC9552C18BD3D0053C2FB /* FilmViewModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

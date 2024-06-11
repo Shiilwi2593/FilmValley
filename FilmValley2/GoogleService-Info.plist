@@ -26,5 +26,7 @@
 	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:962917614246:ios:3959e2c98df07ce70e2a67</string>
+	<key>DATABASE_URL</key>
+	<string>https://film-valley-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>
 </plist>
