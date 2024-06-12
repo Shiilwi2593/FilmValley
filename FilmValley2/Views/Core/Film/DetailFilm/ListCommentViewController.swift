@@ -156,13 +156,16 @@ extension ListCommentViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedReview = reviews[indexPath.row]
         let idUser = selectedReview.idUser
+        let review = reviews[indexPath.row]
+        let comment = review.comment
+        
         rateViewVM.getInfoUserByID(idUser: idUser) { [weak self] userInfo in
             guard let self = self, let userInfo = userInfo else { return }
             
             DispatchQueue.main.async {
-                let userInfoView = UserInfo(frame: CGRect.zero)
+                let userInfoView = UserInfo(frame: .zero)
                 userInfoView.translatesAutoresizingMaskIntoConstraints = false
-                userInfoView.configure(with: userInfo)
+                userInfoView.configure(with: userInfo, review: comment)
                 
                 self.view.addSubview(userInfoView)
                 
@@ -173,27 +176,28 @@ extension ListCommentViewController:UITableViewDelegate, UITableViewDataSource{
                     userInfoView.heightAnchor.constraint(equalToConstant: 250)
                 ])
                 
-                // Apply fade in animation with 1 second duration
-                userInfoView.alpha = 0
-                UIView.animate(withDuration: 1.0, delay: 0, options: [.curveEaseInOut], animations: {
-                    userInfoView.alpha = 1
+                // Apply scale animation from small to normal size
+                userInfoView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+                UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [.curveEaseInOut], animations: {
+                    userInfoView.transform = CGAffineTransform.identity
                 }, completion: nil)
                 
                 // Add tap gesture to dismiss the view
                 let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissUserInfoView(_:)))
-                              self.view.addGestureRecognizer(tapGesture)
-                          
+                self.view.addGestureRecognizer(tapGesture)
             }
         }
     }
     
     @objc private func dismissUserInfoView(_ sender: UITapGestureRecognizer) {
-        for subview in self.view.subviews {
-            if subview is UserInfo {
-                subview.removeFromSuperview()
-            }
+        // Dismiss the UserInfo view with a reverse scale animation
+        if let userInfoView = self.view.subviews.first(where: { $0 is UserInfo }) {
+            UIView.animate(withDuration: 1.0, animations: {
+                userInfoView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+            }, completion: { _ in
+                userInfoView.removeFromSuperview()
+            })
         }
-        self.view.gestureRecognizers?.forEach(self.view.removeGestureRecognizer)
     }
     
     func addPulseAnimation(to view: UIView) {

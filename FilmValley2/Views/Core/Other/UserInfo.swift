@@ -7,7 +7,7 @@ class UserInfo: UIView {
 
     private var usernameLbl: UILabel = {
         let username = UILabel()
-        username.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        username.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         username.textAlignment = .center
         return username
     }()
@@ -22,18 +22,37 @@ class UserInfo: UIView {
 
     private var genderLbl: UILabel = {
         let genderLbl = UILabel()
-        genderLbl.font = UIFont.systemFont(ofSize: 16)
+        genderLbl.font = UIFont.systemFont(ofSize: 13, weight: .medium)
         genderLbl.textAlignment = .center
         return genderLbl
     }()
 
     private var birthdayLbl: UILabel = {
         let birthdayLbl = UILabel()
-        birthdayLbl.font = UIFont.systemFont(ofSize: 16)
+        birthdayLbl.font = UIFont.systemFont(ofSize: 13, weight: .medium)
         birthdayLbl.textAlignment = .center
         return birthdayLbl
     }()
-
+    
+    private var commentLBl: UILabel = {
+       let commentLbl = UILabel()
+        commentLbl.translatesAutoresizingMaskIntoConstraints = false
+        commentLbl.text = "Review:"
+        commentLbl.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        return commentLbl
+    }()
+    
+    private var reviewText: UITextView = {
+        let reviewTxt = UITextView()
+        reviewTxt.translatesAutoresizingMaskIntoConstraints = false
+        reviewTxt.textAlignment = .natural
+        reviewTxt.font = UIFont.systemFont(ofSize: 13, weight: .regular)
+        reviewTxt.textColor = .systemGray
+        reviewTxt.isEditable = false
+        reviewTxt.isScrollEnabled = true
+        reviewTxt.textContainerInset = UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 10) // Customize the
+        return reviewTxt
+    }()
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -44,7 +63,7 @@ class UserInfo: UIView {
     }
 
     private func setupView() {
-        self.backgroundColor = .white
+        self.backgroundColor = .systemBackground
         self.layer.cornerRadius = 10
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.lightGray.cgColor
@@ -53,35 +72,44 @@ class UserInfo: UIView {
         self.addSubview(avatar)
         self.addSubview(genderLbl)
         self.addSubview(birthdayLbl)
+        self.addSubview(commentLBl)
+        self.addSubview(reviewText)
 
         usernameLbl.translatesAutoresizingMaskIntoConstraints = false
         avatar.translatesAutoresizingMaskIntoConstraints = false
         genderLbl.translatesAutoresizingMaskIntoConstraints = false
         birthdayLbl.translatesAutoresizingMaskIntoConstraints = false
+        commentLBl.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            avatar.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
-            avatar.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            avatar.widthAnchor.constraint(equalToConstant: 120),
-            avatar.heightAnchor.constraint(equalToConstant: 120),
+            avatar.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
+            avatar.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 12),
+            avatar.widthAnchor.constraint(equalToConstant: 100),
+            avatar.heightAnchor.constraint(equalToConstant: 100),
 
-            usernameLbl.topAnchor.constraint(equalTo: avatar.bottomAnchor, constant: 16),
-            usernameLbl.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            usernameLbl.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            usernameLbl.topAnchor.constraint(equalTo: self.topAnchor, constant: 25),
+            usernameLbl.leadingAnchor.constraint(equalTo: avatar.trailingAnchor, constant: 9),
 
-            birthdayLbl.topAnchor.constraint(equalTo: usernameLbl.bottomAnchor, constant: 3),
-            birthdayLbl.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            birthdayLbl.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            birthdayLbl.topAnchor.constraint(equalTo: usernameLbl.bottomAnchor, constant: 4),
+            birthdayLbl.leadingAnchor.constraint(equalTo: avatar.trailingAnchor, constant: 12),
 
-            genderLbl.topAnchor.constraint(equalTo: birthdayLbl.bottomAnchor, constant: 3),
-            genderLbl.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            genderLbl.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
-            genderLbl.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16)
+            genderLbl.topAnchor.constraint(equalTo: birthdayLbl.bottomAnchor, constant: 4),
+            genderLbl.leadingAnchor.constraint(equalTo: avatar.trailingAnchor, constant: 12),
+            
+            commentLBl.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 13),
+            commentLBl.heightAnchor.constraint(equalToConstant: 10),
+            commentLBl.topAnchor.constraint(equalTo: avatar.bottomAnchor, constant: 14),
+            
+            reviewText.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 13),
+            reviewText.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -13),
+            reviewText.topAnchor.constraint(equalTo: commentLBl.bottomAnchor, constant: 4),
+            reviewText.heightAnchor.constraint(equalToConstant: 150)
         ])
     }
 
-    func configure(with userInfo: [String: Any]) {
+    func configure(with userInfo: [String: Any], review: String) {
         self.userInfo = userInfo
+        self.reviewText.text = review
 
         if let username = userInfo["username"] as? String {
             usernameLbl.text = "\(username)"
