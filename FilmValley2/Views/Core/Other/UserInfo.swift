@@ -144,7 +144,7 @@ class UserInfo: UIView {
                 if let imageData = data, let image = UIImage(data: imageData) {
                     completion(image)
                 } else {
-                    print("Invalid image data or no image received")
+                    print("Invalid image data or no image received!")
                     completion(nil)
                 }
             }
