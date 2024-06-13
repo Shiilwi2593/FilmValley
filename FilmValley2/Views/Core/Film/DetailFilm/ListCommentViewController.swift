@@ -190,14 +190,12 @@ extension ListCommentViewController:UITableViewDelegate, UITableViewDataSource{
     }
     
     @objc private func dismissUserInfoView(_ sender: UITapGestureRecognizer) {
-        // Dismiss the UserInfo view with a reverse scale animation
-        if let userInfoView = self.view.subviews.first(where: { $0 is UserInfo }) {
-            UIView.animate(withDuration: 1.0, animations: {
-                userInfoView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-            }, completion: { _ in
-                userInfoView.removeFromSuperview()
-            })
+        for subview in self.view.subviews {
+            if subview is UserInfo {
+                subview.removeFromSuperview()
+            }
         }
+        self.view.gestureRecognizers?.forEach(self.view.removeGestureRecognizer)
     }
     
     func addPulseAnimation(to view: UIView) {

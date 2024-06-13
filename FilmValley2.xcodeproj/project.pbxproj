@@ -57,6 +57,7 @@
 		2B5AC9862C18C2240053C2FB /* TestViewController.swift 23-40-51-307.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AC9852C18C2240053C2FB /* TestViewController.swift 23-40-51-307.swift */; };
 		2B5AC9882C18C24F0053C2FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B5AC9872C18C24F0053C2FB /* GoogleService-Info.plist */; };
 		2BA205472BCAA44C004DE6F3 /* ImageURl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2053F2BCAA44C004DE6F3 /* ImageURl.swift */; };
+		2BE2B13B2C1AB0020034010E /* EditProfileViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2B13A2C1AB0020034010E /* EditProfileViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		2BA205042BCAA25D004DE6F3 /* FilmValley2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmValley2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA205152BCAA25E004DE6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BA2053F2BCAA44C004DE6F3 /* ImageURl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageURl.swift; sourceTree = "<group>"; };
+		2BE2B13A2C1AB0020034010E /* EditProfileViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 				2B5AC9632C18BF0D0053C2FB /* AccountCreatedViewController.swift */,
 				2B5AC9652C18BF1D0053C2FB /* AccountInfoViewController.swift */,
 				2B5AC9672C18BF3C0053C2FB /* AddUserInfoViewController.swift */,
+				2BE2B13A2C1AB0020034010E /* EditProfileViewViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				2B5AC9822C18C2160053C2FB /* SearchViewController.swift in Sources */,
 				2B5AC9532C18BD3D0053C2FB /* FavouriteViewModel.swift in Sources */,
 				2B5AC94A2C18BC260053C2FB /* FirebaseFunc.swift in Sources */,
+				2BE2B13B2C1AB0020034010E /* EditProfileViewViewController.swift in Sources */,
 				2B5AC8F52C18B6380053C2FB /* SessionManager.swift in Sources */,
 				2BA205472BCAA44C004DE6F3 /* ImageURl.swift in Sources */,
 				2B5AC9762C18C1E20053C2FB /* ListMovieViewController.swift in Sources */,

@@ -103,7 +103,7 @@ class UserInfo: UIView {
             reviewText.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 13),
             reviewText.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -13),
             reviewText.topAnchor.constraint(equalTo: commentLBl.bottomAnchor, constant: 4),
-            reviewText.heightAnchor.constraint(equalToConstant: 150)
+            reviewText.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10)
         ])
     }
 

@@ -141,4 +141,33 @@ class AccountInfoViewModel {
         }
     }
     
+    //MARK: - Edit Profile
+    func updateProfileInfo(username: String, gender: String, birthday: String, completion: @escaping (Bool) -> Void){
+        guard let idUser = Auth.auth().currentUser?.uid else { return }
+        let ref = Database.database().reference().child("Account").child(idUser)
+        
+        let updateData: [String: Any] = [
+            "username": username,
+            "gender": gender,
+            "birthday": birthday,
+        ]
+        
+        
+        ref.updateChildValues(updateData){
+            error, ref in
+            if let error = error {
+                print("Error updating profile: \(error.localizedDescription)")
+                completion(false)
+            } else {
+                print("Profile successfully updated.")
+                completion(true)
+            }
+            
+        }
+        
+    }
+    
+    
+    
+    
 }

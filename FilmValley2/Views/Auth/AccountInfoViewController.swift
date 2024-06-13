@@ -159,6 +159,16 @@ class AccountInfoViewController: UIViewController {
         return favView
     }()
     
+    private var editProfileBtn: UIButton = {
+        let editProfileBtn = UIButton()
+        editProfileBtn.translatesAutoresizingMaskIntoConstraints = false
+        editProfileBtn.setTitle("edit profile", for: .normal)
+        editProfileBtn.setTitleColor(.systemBlue, for: .normal)
+        editProfileBtn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        editProfileBtn.addTarget(self, action: #selector(didTapEditProfileBtn), for: .touchUpInside)
+        return editProfileBtn
+    }()
+    
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -192,6 +202,7 @@ class AccountInfoViewController: UIViewController {
         view.addSubview(editAvatarBtn)
         view.addSubview(divider2)
         view.addSubview(favBtn)
+        view.addSubview(editProfileBtn)
         
         avatar.image = UIImage(named: "avatar")
         
@@ -199,7 +210,9 @@ class AccountInfoViewController: UIViewController {
         
         favBtn.addTarget(self, action: #selector(didTapFavouriteBtn), for: .touchUpInside)
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "line.3.horizontal"), style: .plain, target: self, action: #selector(menuButtonTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.forward"), style: .plain, target: self, action: #selector(menuButtonTapped))
+        navigationItem.rightBarButtonItem?.customView?.semanticContentAttribute = .forceRightToLeft
+
         
         editAvatarBtn.addTarget(self, action: #selector(didTappedAvatarEditBtn), for: .touchUpInside)
         
@@ -212,9 +225,13 @@ class AccountInfoViewController: UIViewController {
             usernameLbl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             usernameLbl.topAnchor.constraint(equalTo: avatar.bottomAnchor, constant: 20),
             
+            editProfileBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            editProfileBtn.topAnchor.constraint(equalTo: usernameLbl.bottomAnchor, constant: 2),
+            editProfileBtn.heightAnchor.constraint(equalToConstant: 14 ),
+            
             divider.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             divider.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            divider.topAnchor.constraint(equalTo: usernameLbl.bottomAnchor, constant: 20),
+            divider.topAnchor.constraint(equalTo: editProfileBtn.bottomAnchor, constant: 10),
             divider.heightAnchor.constraint(equalToConstant: 1),
             
             titleLbl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 17),
@@ -264,7 +281,7 @@ class AccountInfoViewController: UIViewController {
             
             divider2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             divider2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            divider2.topAnchor.constraint(equalTo: dateJoinLbl.bottomAnchor, constant: 20),
+            divider2.topAnchor.constraint(equalTo: dateJoinContent.bottomAnchor, constant: 20),
             divider2.heightAnchor.constraint(equalToConstant: 1),
             
             favBtn.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
@@ -477,6 +494,22 @@ class AccountInfoViewController: UIViewController {
             vc.willMove(toParent: nil)
             vc.view.removeFromSuperview()
             vc.removeFromParent()
+        }
+    }
+    
+    @objc private func didTapEditProfileBtn() {  
+        viewModel.fetchUserInfo { userInfo in
+            let username = userInfo?.username
+            let gender = userInfo?.gender
+            let birthday = userInfo?.birthday
+            
+            let sheetViewController = EditProfileViewController(username: username ?? "", gender: gender ?? "", birthday: birthday ?? "")
+            if let sheet = sheetViewController.sheetPresentationController {
+                sheet.detents = [.medium(), .large()]
+                sheet.prefersGrabberVisible = true
+                sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+            }
+            self.present(sheetViewController, animated: true, completion: nil)
         }
     }
 }

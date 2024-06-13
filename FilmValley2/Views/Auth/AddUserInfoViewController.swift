@@ -157,8 +157,8 @@ class AddUserInfoViewController: UIViewController {
                 self.SignUpBtn.backgroundColor = self.SignUpBtn.backgroundColor?.withAlphaComponent(1)
             }
         }
-        guard let username = usernameInput.text, !username.isEmpty, username.count > 6 else {
-            let alert = UIAlertController(title: "Invalid username", message: "Username cannot be empty and must be longer than 6 characters", preferredStyle: .alert)
+        guard let username = usernameInput.text, !username.isEmpty, username.count > 6, username.count < 20 else {
+            let alert = UIAlertController(title: "Invalid username", message: "Username cannot be empty and must be longer than 6 and smaller than 20 characters", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
             usernameInput.text = ""
