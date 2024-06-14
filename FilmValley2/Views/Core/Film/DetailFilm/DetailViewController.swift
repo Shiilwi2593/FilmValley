@@ -572,13 +572,39 @@ class DetailViewController: UIViewController {
         
         playerViewController = AVPlayerViewController()
         playerViewController?.player = player
+        playerViewController?.delegate = self // Đảm bảo delegate đã được set
         
         if let playerVC = playerViewController {
             present(playerVC, animated: true) {
                 playerVC.player?.play()
             }
         }
+        
+        // Theo dõi thời gian của video
+        player?.addPeriodicTimeObserver(forInterval: CMTime(seconds: 15, preferredTimescale: 1), queue: DispatchQueue.main) { [weak self] time in
+            // Lưu lại thời gian hiện tại
+            let currentTime = CMTimeGetSeconds(time)
+            self?.saveCurrentPlaybackTime(currentTime)
+        }
     }
+    
+    private func saveCurrentPlaybackTime(_ currentTime: Double) {
+        // Lưu currentTime vào cơ sở dữ liệu hoặc biến trạng thái
+        UserDefaults.standard.set(currentTime, forKey: "lastPlaybackTime_\(film.id)")
+    }
+
+    private func loadLastPlaybackTime() -> Double {
+        return UserDefaults.standard.double(forKey: "lastPlaybackTime_\(film.id)")
+    }
+    
+    func playerViewControllerDidStopPictureInPicture(_ playerViewController: AVPlayerViewController) {
+        // Lấy thời gian hiện tại và lưu lại khi player đóng
+        if let currentTime = player?.currentTime().seconds {
+            saveCurrentPlaybackTime(currentTime)
+        }
+    }
+
+
     
 }
 

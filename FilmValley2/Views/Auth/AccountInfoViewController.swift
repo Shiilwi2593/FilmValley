@@ -165,9 +165,33 @@ class AccountInfoViewController: UIViewController {
         editProfileBtn.setTitle("edit profile", for: .normal)
         editProfileBtn.setTitleColor(.systemBlue, for: .normal)
         editProfileBtn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
-        editProfileBtn.addTarget(self, action: #selector(didTapEditProfileBtn), for: .touchUpInside)
         return editProfileBtn
     }()
+    
+    private var historyButton: UIButton = {
+        let historyButton = UIButton()
+        historyButton.translatesAutoresizingMaskIntoConstraints = false
+        historyButton.configuration = .tinted()
+        historyButton.configuration?.baseForegroundColor = UIColor(red: 0.224, green: 0.612, blue: 0.043, alpha: 1)
+        
+        let title = "Watch List"
+        let attribute: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 15, weight: .semibold),
+            .foregroundColor: UIColor(red: 0.224, green: 0.612, blue: 0.043, alpha: 1)
+        ]
+        
+        let attributeTitle = NSAttributedString(string: title, attributes: attribute)
+        
+        historyButton.configuration?.attributedTitle = AttributedString(attributeTitle)
+        historyButton.configuration?.subtitle = "Your Viewing History           "
+        historyButton.configuration?.image = UIImage(systemName: "film.stack.fill")
+        historyButton.configuration?.imagePadding = 6
+        historyButton.configuration?.imagePlacement = .leading
+        historyButton.configuration?.baseBackgroundColor = .systemGray4
+        return historyButton
+    }()
+    
+    
     
     
     // MARK: - Lifecycle Methods
@@ -203,6 +227,7 @@ class AccountInfoViewController: UIViewController {
         view.addSubview(divider2)
         view.addSubview(favBtn)
         view.addSubview(editProfileBtn)
+        view.addSubview(historyButton)
         
         avatar.image = UIImage(named: "avatar")
         
@@ -210,10 +235,11 @@ class AccountInfoViewController: UIViewController {
         
         favBtn.addTarget(self, action: #selector(didTapFavouriteBtn), for: .touchUpInside)
         
+        editProfileBtn.addTarget(self, action: #selector(didTapEditProfileBtn), for: .touchUpInside)
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.forward"), style: .plain, target: self, action: #selector(menuButtonTapped))
         navigationItem.rightBarButtonItem?.customView?.semanticContentAttribute = .forceRightToLeft
 
-        
         editAvatarBtn.addTarget(self, action: #selector(didTappedAvatarEditBtn), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
@@ -288,6 +314,11 @@ class AccountInfoViewController: UIViewController {
             favBtn.topAnchor.constraint(equalTo: divider2.bottomAnchor, constant: 10),
             favBtn.widthAnchor.constraint(equalToConstant: 230),
             favBtn.heightAnchor.constraint(equalToConstant: 44),
+            
+            historyButton.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 15),
+            historyButton.topAnchor.constraint(equalTo: favBtn.bottomAnchor, constant: 15),
+            historyButton.widthAnchor.constraint(equalToConstant: 230),
+            historyButton.heightAnchor.constraint(equalToConstant: 44),
         ])
     }
  

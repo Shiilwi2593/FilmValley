@@ -159,4 +159,9 @@ class DetailViewModel{
         }
     }
     
+    //MARK: -AVPlayer
+    func storeWatchingFilm(idFilm: String, minutes: Int){
+        
+    }
+    
 }

@@ -116,7 +116,6 @@ class EditProfileViewController: UIViewController {
         config.baseBackgroundColor = .black
         config.baseForegroundColor = .white
         confirmBtn.configuration = config
-        confirmBtn.addTarget(self, action: #selector(confirmBtnTapped), for: .touchUpInside)
         return confirmBtn
     }()
     
@@ -158,6 +157,9 @@ class EditProfileViewController: UIViewController {
         if let date = dateFormatter.date(from: birthday) {
             birthdayInput.date = date
         }
+        
+        confirmBtn.addTarget(self, action: #selector(confirmBtnTapped), for: .touchUpInside)
+
         
         NSLayoutConstraint.activate([
             headTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),
