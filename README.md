@@ -23,7 +23,7 @@
 - 📋 **View Liked Movies**: See a list of all the movies you've liked.
 
 ## 📸 Screenshots
-LinkDrive: https://drive.google.com/drive/folders/1MecMuMjIS40TsvdnVGfLLju8nEjQpt6L?usp=drive_link
+LinkDrive: https://drive.google.com/drive/folders/1MecMuMjIS40TsvdnVGfLLju8nEjQpt6L?usp=sharing
 
 Ensure you have the following installed:
 - Xcode 12 or later
