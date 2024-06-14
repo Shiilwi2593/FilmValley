@@ -1,4 +1,4 @@
-# 🎬 FilmValley
+# 🎬 FilmValley [UIkit(No storyboard, Firebase]
 
 > FilmValley is a sleek, user-friendly movie streaming app built using Xcode and UIKit (No storyboard). Enjoy a seamless experience discovering, watching, and interacting with your favorite movies.
 
