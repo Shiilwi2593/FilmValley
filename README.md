@@ -21,16 +21,9 @@
 - 📋 **View Liked Movies**: See a list of all the movies you've liked.
 
 ## 📸 Screenshots
-
-
-## 🚀 Getting Started
-
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
+LinkDrive: https://drive.google.com/drive/folders/1MecMuMjIS40TsvdnVGfLLju8nEjQpt6L?usp=drive_link
 
 Ensure you have the following installed:
-
 - Xcode 12 or later
 - Swift 5.3 or later
 
