@@ -10,6 +10,7 @@
 - 🎞️ **Movie List**: Browse a comprehensive list of movies.
 - 🧐 **Movie Details**: View detailed information about each movie.
 - ▶️ **Watch Movies**: Stream movies directly from the app.
+- 📺 **Watch TVShow** Stream TVShow directly from the app.
 - 🎬 **Watch Trailers**: Preview movies by watching trailers.
 - ⭐ **Rate Movies**: Provide ratings for movies you've watched.
 - 📊 **View Ratings Charts**: See detailed rating statistics for each movie.
