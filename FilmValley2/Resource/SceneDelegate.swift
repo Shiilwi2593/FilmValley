@@ -31,10 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }
         }
     
-//        let vc = EditProfileViewController()
-//        
-//        window?.rootViewController = vc
-//        window?.makeKeyAndVisible()
+//      grayl
     }
     
     

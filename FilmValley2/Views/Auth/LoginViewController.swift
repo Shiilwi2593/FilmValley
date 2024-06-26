@@ -92,6 +92,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationItem.setHidesBackButton(true, animated: false)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+             view.addGestureRecognizer(tapGesture)
         SetUp()
     }
     
@@ -198,6 +201,15 @@ class LoginViewController: UIViewController {
         }
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
+        }
+        
+        @objc func dismissKeyboard() {
+            view.endEditing(true)
+        }
+    
     
     
     
@@ -216,5 +228,5 @@ class LoginViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    
 }
+

@@ -131,8 +131,7 @@ class DetailViewModel{
             }
         }
     }
-    
-    //get AvgPoint, ChartData
+
     func getPoint(data: [String], completion: @escaping ([Double]) -> Void) {
         var points: [Double] = []
         let ref = Database.database().reference().child("Reviews")

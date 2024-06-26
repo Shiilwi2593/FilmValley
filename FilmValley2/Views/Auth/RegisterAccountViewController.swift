@@ -176,4 +176,5 @@ class RegisterAccountViewController: UIViewController {
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegex)
         return emailPredicate.evaluate(with: email)
     }
+
 }

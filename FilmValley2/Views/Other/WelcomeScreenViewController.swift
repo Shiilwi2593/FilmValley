@@ -23,4 +23,5 @@ class WelcomeScreenViewController: UIViewController{
         view.backgroundColor = .white
         view.addSubview(image)
     }
+    
 }

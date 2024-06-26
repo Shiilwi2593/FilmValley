@@ -74,4 +74,5 @@ class AccountCreatedViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
         vc.navigationItem.setHidesBackButton(true, animated: false)
     }
+    
 }

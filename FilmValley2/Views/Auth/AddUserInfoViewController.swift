@@ -175,45 +175,48 @@ class AddUserInfoViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 return
             }
-        }
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let birthday = dateFormatter.string(from: birthdayInput.date)
-        let genderSelected = genderPicker.selectedRow(inComponent: 0)
-        let gender = genders[genderSelected]
-        print(email,password,username,birthday,gender)
-        
-        registerVM.createUser(email: self.email, password: self.password, username: username, birthday: birthday, gender: gender) { success, error in
-            if let error = error {
-                print("Error creating user:", error.localizedDescription)
-            } else if success {
-                if let uid = Auth.auth().currentUser?.uid{
-                    print(uid)
-                    self.registerVM.createUserInFavouriteList(userId: uid) { error in
-                        if let _ = error{
-                            print("Can't create favourite")
-                        }else{
-                            print("Favourite created")
-                        }
-                    }
-                }
+            else{
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd"
+                let birthday = dateFormatter.string(from: self.birthdayInput.date)
+                let genderSelected = self.genderPicker.selectedRow(inComponent: 0)
+                let gender = self.genders[genderSelected]
+                print(self.email,self.password,username,birthday,gender)
                 
-                DispatchQueue.main.async {
-                    let vc = LoginViewController()
-                    vc.navigationItem.setHidesBackButton(true, animated: false)
-                    self.navigationController?.pushViewController(vc, animated: true)
-                    let alert = UIAlertController(title: "", message: "User create successfully!", preferredStyle: .alert)
-                    alert.setMessage(font: UIFont.systemFont(ofSize: 14), color: .systemGreen)
-                    self.present(alert, animated: true, completion: nil)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        alert.dismiss(animated: true)
+                self.registerVM.createUser(email: self.email, password: self.password, username: username, birthday: birthday, gender: gender) { success, error in
+                    if let error = error {
+                        print("Error creating user:", error.localizedDescription)
+                    } else if success {
+                        if let uid = Auth.auth().currentUser?.uid{
+                            print(uid)
+                            self.registerVM.createUserInFavouriteList(userId: uid) { error in
+                                if let _ = error{
+                                    print("Can't create favourite")
+                                }else{
+                                    print("Favourite created")
+                                }
+                            }
+                        }
+                        
+                        DispatchQueue.main.async {
+                            let vc = LoginViewController()
+                            vc.navigationItem.setHidesBackButton(true, animated: false)
+                            self.navigationController?.pushViewController(vc, animated: true)
+                            let alert = UIAlertController(title: "", message: "User create successfully!", preferredStyle: .alert)
+                            alert.setMessage(font: UIFont.systemFont(ofSize: 14), color: .systemGreen)
+                            self.present(alert, animated: true, completion: nil)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                alert.dismiss(animated: true)
+                            }
+                        }
+                    } else {
+                        print("User creation failed.")
                     }
                 }
-            } else {
-                print("User creation failed.")
             }
         }
+        
+        
     }
     
     @objc private func datePickerValueChanged(_ sender: UIDatePicker) {
@@ -253,6 +256,7 @@ extension AddUserInfoViewController: UIPickerViewDelegate, UIPickerViewDataSourc
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let _ = genders[row]
     }
+    
     
 }
 

@@ -242,6 +242,8 @@ class AccountInfoViewController: UIViewController {
 
         editAvatarBtn.addTarget(self, action: #selector(didTappedAvatarEditBtn), for: .touchUpInside)
         
+        historyButton.addTarget(self, action: #selector(historyButtonTapped), for: .touchUpInside)
+        
         NSLayoutConstraint.activate([
             avatar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             avatar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -543,6 +545,12 @@ class AccountInfoViewController: UIViewController {
             self.present(sheetViewController, animated: true, completion: nil)
         }
     }
+    
+    @objc private func historyButtonTapped(){
+        let alert = UIAlertController(title: "Message", message: "Comming soon !", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
+    }
 }
 
 extension AccountInfoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -566,5 +574,6 @@ extension AccountInfoViewController: UIImagePickerControllerDelegate, UINavigati
             updatedAlert.dismiss(animated: true)
         }
     }
+
 }
 

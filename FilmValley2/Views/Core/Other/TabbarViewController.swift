@@ -26,20 +26,23 @@ class TabbarViewController: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         
         let vc1 = ListMovieViewController()
-        let vc2 = SearchViewController()
-        let vc3 = AccountInfoViewController()
+        let vc2 = ListTvShowController()
+        let vc3 = SearchViewController()
+        let vc4 = AccountInfoViewController()
         
         let nav1 = UINavigationController(rootViewController: vc1)
         let nav2 = UINavigationController(rootViewController: vc2)
         let nav3 = UINavigationController(rootViewController: vc3)
+        let nav4 = UINavigationController(rootViewController: vc4)
         
-        nav1.tabBarItem = UITabBarItem(title: "List", image: UIImage(systemName: "house"), tag: 1)
-        nav2.tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"), tag: 1)
-        nav3.tabBarItem = UITabBarItem(title: "Account", image: UIImage(systemName: "person"), tag: 1)
+        nav1.tabBarItem = UITabBarItem(title: "Movies", image: UIImage(systemName: "film.fill"), tag: 1)
+        nav2.tabBarItem = UITabBarItem(title: "TV Shows", image: UIImage(systemName: "film.stack.fill"), tag: 1)
+        nav3.tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"), tag: 1)
+        nav4.tabBarItem = UITabBarItem(title: "Account", image: UIImage(systemName: "person"), tag: 1)
         
         tabBar.backgroundColor = .systemGray6
         
-        setViewControllers([nav1, nav2, nav3], animated: false)
+        setViewControllers([nav1, nav2, nav3, nav4], animated: false)
         
         print(currentUser.uid)
         
@@ -86,6 +89,7 @@ class TabbarViewController: UITabBarController, UITabBarControllerDelegate {
         super.viewWillAppear(animated)
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
+    
 }
 
 

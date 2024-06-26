@@ -24,7 +24,7 @@ class ListMovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // NavBar
-        title = "Catalog"
+        title = "Movies"
         view.backgroundColor = .systemBackground
         self.navigationController?.navigationBar.prefersLargeTitles = true
         setUp()
