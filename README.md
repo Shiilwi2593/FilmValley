@@ -25,7 +25,7 @@
 
 ## 📸 Screenshots
 - LinkDrive: https://drive.google.com/drive/folders/1MecMuMjIS40TsvdnVGfLLju8nEjQpt6L?usp=sharing
-- LinkVideo: https://drive.google.com/file/d/108v3xyoWXjPpYwjlPiVYY0CO8b0lP4k9/view?usp=sharing
+- LinkVideo: https://youtu.be/wvu3GM4gFuM 
 
 Ensure you have the following installed:
 - Xcode 12 or later
